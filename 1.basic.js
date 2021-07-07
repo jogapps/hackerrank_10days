@@ -157,3 +157,14 @@ const pentagon = new Polygon([10, 20, 30, 40, 43]);
 console.log(rectangle.perimeter());
 console.log(square.perimeter());
 console.log(pentagon.perimeter());
+
+/*
+ * Modify and return the array so that all even elements are doubled and all odd elements are tripled.
+ * 
+ * Parameter(s):
+ * nums: An array of numbers.
+ */
+function modifyArray(nums) {
+    let newArray = nums.map(nums => nums % 2 === 0 ? nums * 2 : nums * 3);
+    return newArray;
+}
